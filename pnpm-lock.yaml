@@ -23,6 +23,12 @@ importers:
       '@tanstack/react-start':
         specifier: 1.169.5
         version: 1.169.5(esbuild@0.28.2)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(rolldown@1.2.19)(supports-color@10.2.2)(vite@8.3.8(@types/node@22.20.5)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.8.3))
+      '@whop/elements':
+        specifier: ^1.10.0
+        version: 1.10.0
+      '@whop/elements-react':
+        specifier: ^1.10.0
+        version: 1.10.0(@whop/elements@1.10.0)(react@19.3.1)
       react:
         specifier: ^19.2.0
         version: 19.3.1
@@ -1220,6 +1226,15 @@ packages:
     resolution: {integrity: sha512-Dhty1YsWSXzco0ZZHXl5Sf8UHPr66qds/4o+roI5wsurkcwy5f+fgx3Sb6rhs+N85G798jhOgpCdCmhwyYOgyA==}
     engines: {node: '>=22'}
     hasBin: true
+
+  '@whop/elements-react@1.10.0':
+    resolution: {integrity: sha512-sWWXeHhIB8zbJV2eAnyVm4gm0Y0uk942oSVa57kqLSBZmirvgJCafs/1T+SE4RxKlK8do0pZszAm+sLgK8k/3g==}
+    peerDependencies:
+      '@whop/elements': ^1.10.0
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  '@whop/elements@1.10.0':
+    resolution: {integrity: sha512-lHDGD4z9WYWHh8TgKi8H4yEtqr9a2GI8OWvmzFIoDWCldSYpf51+AkQXmetnhH8iaYCZ+0qgdU9+ynf+1Ss+dA==}
 
   ansis@4.5.0:
     resolution: {integrity: sha512-KwIVkfFfJSSzBmZhDGuTmkhWqTdyB5oNVzzznBJbBZ5bZtHiqSrcugRF0RKJKT4Ss3d7ZrcjnlFVDlQNmtWfWw==}
@@ -2840,6 +2855,14 @@ snapshots:
       '@clack/prompts': 1.9.0
       chalk: 5.4.1
       yaml: 2.8.3
+
+  '@whop/elements-react@1.10.0(@whop/elements@1.10.0)(react@19.3.1)':
+    dependencies:
+      '@whop/elements': 1.10.0
+      react: 19.3.1
+      use-sync-external-store: 1.7.0(react@19.3.1)
+
+  '@whop/elements@1.10.0': {}
 
   ansis@4.5.0: {}
 
